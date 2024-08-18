@@ -1,0 +1,178 @@
+:root {
+    --background-color1: #1A374D;
+    --accent-color1: #40B3A2;
+    --accent-color2: #E9D758;
+    --accent-color: #FF7E67;
+    --text-color1: #F5F5F5; 
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: var(--text-color1);
+    background-color: var(--background-color1);
+  }
+  
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #2F7F73;
+    z-index: 1000;
+  }
+  
+  #header-img {
+    width: 100px;
+    border-radius: 7%
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: var(--text-color1);
+    margin: 0 15px;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    color: var(--accent-color2);
+  }
+  
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 450px;
+    background-image: url('https://as1.ftcdn.net/v2/jpg/02/47/78/16/1000_F_247781658_iWZvi0vPUsA3cCxHfsgASsaoDDUK4Otd.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: var(--text-color1);
+    padding-top: 80px;
+  }
+  
+  .hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: var(--accent-color);
+  }
+  
+  .hero button {
+    background-color: var(--accent-color1);
+    color: var(--text-color1);
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .hero button:hover {
+    background-color: var(--accent-color2);
+  }
+  
+  #texto {
+    padding: 20px;
+    background-color: var(--background-color1);
+    color: var(--text-color1);
+    line-height: 1.6;
+  }
+  
+  #video-section {
+    padding: 20px;
+    background-color: var(--accent-color1);
+    color: var(--text-color1);
+    text-align: center;
+  }
+  
+  #video-section h3 {
+    margin-bottom: 20px;
+  }
+  
+  #video {
+    max-width: 100%;
+    border: 3px solid var(--accent-color2);
+  }
+  
+  #beneficios {
+    padding: 20px;
+    background-color: var(--background-color1);
+    color: var(--text-color1);
+  }
+  
+  #beneficios h3 {
+    margin-bottom: 20px;
+  }
+  
+  .section-subtitle {
+    color: var(--accent-color2);
+  }
+  
+  #form {
+    padding: 20px;
+    text-align: center;
+    background-color: var(--accent-color1);
+  }
+  
+  #form h3 {
+    margin-bottom: 15px;
+  }
+  
+  #email {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 70%;
+    max-width: 300px;
+    margin-bottom: 15px;
+  }
+  
+  #submit {
+    background-color: var(--accent-color);
+    color: var(--text-color1);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  #submit:hover {
+    background-color: var(--accent-color2);
+  }
+  
+  /* Media Query para pantallas pequeñas */
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      margin-top: 10px;
+    }
+  
+    nav a {
+      margin: 10px 0;
+    }
+  
+    .hero h2 {
+      font-size: 2rem;
+    }
+  
+    .hero button {
+      font-size: 1rem;
+      padding: 8px 16px;
+    }
+  }
